@@ -1,13 +1,13 @@
 import aws_cdk as core
 import aws_cdk.assertions as assertions
 
-from customasg.customasg_stack import CustomasgStack
+from newasg.newasg_stack import NewasgStack
 
 # example tests. To run these tests, uncomment this file along with the example
-# resource in customasg/customasg_stack.py
+# resource in newasg/newasg_stack.py
 def test_sqs_queue_created():
     app = core.App()
-    stack = CustomasgStack(app, "customasg")
+    stack = NewasgStack(app, "newasg")
     template = assertions.Template.from_stack(stack)
 
 #     template.has_resource_properties("AWS::SQS::Queue", {
