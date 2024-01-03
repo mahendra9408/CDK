@@ -23,6 +23,7 @@ class NewasgStack(Stack):
             machine_image=ec2.AmazonLinuxImage(),
             security_group=my_security_group,
             min_capacity=2,
+            desired_capacity=1,
             max_capacity=5
         )
 
